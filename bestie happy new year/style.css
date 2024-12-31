@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: white;
+    text-align: center;
+  }
+  
+  .banner {
+    padding: 20px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heartfelt-message, .gallery, .quiz {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  
+  .photo-grid img {
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  button {
+    background: #ff416c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.5);
+  }
+  
+  footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+  }
+  
+  /* Falling Confetti Animation */
+  .confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: url('https://cdn.pixabay.com/photo/2018/03/21/01/39/confetti-3242982_1280.png') repeat;
+    background-size: contain;
+    animation: fall 10s linear infinite;
+  }
+  
+  @keyframes fall {
+    from {
+      background-position: 0 -200px;
+    }
+    to {
+      background-position: 0 100%;
+    }
+  }
+  
